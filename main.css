@@ -1,24 +1,13 @@
-body {
-  
-    background-image: url('backgruond.jpg');
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
+  /*image change */
   img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     width: auto; 
   }
-
+  /* change button design */
   button {
-    background-color: #5500dd; /* Green */
+    background-color: lightblue;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -29,92 +18,24 @@ body {
   }
 
 
-/* Radio button design changer */
-  
-body {
+/* Radio button text changer */
+  body {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.6667em;
     font-weight: bold;
     color: white;
   }
-  #first {
-    background-color: #4B4D65;
-  }
-  #second {
-    background-color: #FF8A66;
-  }
-  .section {
-    padding: 100px;
-    padding-left: 150px;
-  }
-  .section input[type="radio"],
-  .section input[type="checkbox"]{
-    display: none;
-  }
-  .container {
-    margin-bottom: 10px;
-  }
-  .container label {
-    position: relative;
-  }
-  
-  /* Base styles for spans */
-  .container span::before,
-  .container span::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  
-  /* Radio buttons */
-  .container span.radio:hover {
-    cursor: pointer;
-  }
-  .container span.radio::before {
-    left: -52px;
-    width: 45px;
-    height: 25px;
-    background-color: #A8AAC1;
-    border-radius: 50px;
-  }
-  .container span.radio::after {
-    left: -49px;
-    width: 17px;
-    height: 17px;
-    border-radius: 10px;
-    background-color: #6C788A;
-    transition: left .25s, background-color .25s;
-  }
-  input[type="radio"]:checked + label span.radio::after {
-    left: -27px;
-    background-color: #EBFF43;
-  }
-  
-  /* Check-boxes */
-  .container span.checkbox::before {
-    width: 27px;
-    height: 27px;
-    background-color: #fff;
-    left: -35px;
-    box-sizing: border-box;
-    border: 3px solid transparent;
-    transition: border-color .2s;
-  }
-  .container span.checkbox:hover::before {
-    border: 3px solid #F0FF76;
-  }
-  .container span.checkbox::after {
-    content: '\f00c';
-    font-family: 'FontAwesome';
-    left: -31px;
-    top: 2px;
-    color: transparent;
-    transition: color .2s;
-  }
-  input[type="checkbox"]:checked + label span.checkbox::after {
-    color: #62AFFF;
+ 
+
+  /* Change quiz baxkgruond design */
+  div#test{
+    border:none;
+    padding:10px 40px 40px 40px;
+    background-color: rgb(53, 131, 156);
+    height: auto;
+    width: auto;
+    max-width: 40%;
+    max-height: 50%;
   }
