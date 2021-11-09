@@ -1,70 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="se">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sommar aktivitet i Husaby</title>
+    <title>Quiz Hemsida</title>
   	<link rel = "ico" type = "image/png" href = "favicon.ico">
     <link rel="stylesheet" href="main.css">
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
     
 </head>
 
 
 <body>
     <div class="parallax"></div>
-<div class="center">
-    <button style = "margin: 15px"; onclick="window.location.href = 'https://www.testwebbsite.ml/quiz-site_V';">Tipspromenad Vuxna</button>
-    <button style = "margin: 15px"; onclick="window.location.href = 'https://www.testwebbsite.ml/quiz-site_B';">Tipspromenad Barn</button>
-    <button style = "margin: 15px"; onclick="window.location.href = 'https://www.testwebbsite.ml/map-site';">Karta till Skattjakt</button>
-  
-    <div class="logo"> 
-     <img class="main-logo" src="kyrkan_logo.png" alt="kyrka_logo" />
-    </div> 
+<div class="Button_Modefier">
+
+    <button type = "button" class="nes-btn is-primary" onclick="window.location.href = 'http://127.0.0.1:5500/quiz-site_V.html';">Frågor Svårt</button>
+    <button type = "button" class="nes-btn is-primary" onclick="window.location.href = 'http://127.0.0.1:5500/quiz-site_B.html';">Frågor Enkelt</button>
+
+    
 
   </div>
-<style>
-
-
-/*change button possition */
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: auto;
-  border: none;
-  margin-left: 500px;
-}
-
-
-/* change image logo style */
-.logo { 
-  padding-right: 500px; 
-  padding-top: 900px;
-  max-width: 400px;
-  max-height: 400px;
-  margin-right: 90px;
-  margin-top: 90px;
-}
-
-
-
-/*change background image and possiton*/
-  body {
-  
-  background-image: url("nedladdning.jpeg");
-  
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
 
 </body>
 </html>

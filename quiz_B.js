@@ -95,29 +95,31 @@ function get(x){
 function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
-    test.innerHTML = "<h2>Du fick "+correct+" av "+questions.length+" frågor rätt</h2>"
-    get("test_status").innerHTML = "Tipspromenad klar, Bra jobbat";
+    test.innerHTML = "<h2><span class ='nes-text is-primary'> Du fick "+correct+" av "+questions.length+" frågor rätt</span></h2>"
+    get("test_status").innerHTML = "<h2><span class ='nes-text is-primary'>Tipspromenad klar, Bra jobbat</span></h2>";
     // resets the variable to allow users to restart the test
     pos = 0;
     correct = 0;
     // stops rest of renderQuestion function running when test is completed
     return false;
   }
-  get("test_status").innerHTML = "Fråga "+(pos+1)+" av "+questions.length;
+  get("test_status").innerHTML = "<h1><span class ='nes-text is-primary'> "+(pos+1)+" av "+questions.length;" </span></h1>";
   
   question = questions[pos].question;
   chA = questions[pos].a;
   chB = questions[pos].b;
   chC = questions[pos].c;
   // display the question
-  test.innerHTML = "<h3>"+question+"</h3>";
+  test.innerHTML = "<h3><span class ='nes-text is-primary'>"+question+"</span></h3>"
   // display the answer options
   // the += appends to the data we started on the line above
  
   test.innerHTML += "<label> <input type='radio' id=radio1 name='choices' value='A'> "+chA+"</label><br>";
   test.innerHTML += "<label> <input type='radio' id=radio2 name='choices' value='B'> "+chB+"</label><br>";
   test.innerHTML += "<label> <input type='radio' id=radio3 name='choices' value='C'> "+chC+"</label><br><br>";
-  test.innerHTML += "<button onclick='checkAnswer()'>Svara</button>";
+  test.innerHTML += "<input onclick='checkAnswer()' type = 'button' value = 'Svara'class='nes-btn'> </input>";
+
+  /*"<label> <input type='radio' id=radio2 name='choices' value='B'> "+chB+"</label><br>";*/
 }
 
 function checkAnswer(){

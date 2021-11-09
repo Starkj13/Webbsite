@@ -1,42 +1,77 @@
 
   /*image change */
   img {
-    max-width: 50%;
+    max-width: auto;
     height: auto;
     width: auto; 
   }
-  /* change button design */
-  button {
-    background-color: lightblue;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
 
 /* Radio button text changer */
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.6667em;
-    font-weight: bold;
-    color: white;
-  }
+
  
 
-  /* Change quiz baxkgruond design */
+  /* Change quiz boxgruond design */
   div#test{
     border:none;
-    padding:10px 40px 40px 40px;
-    background-color: rgb(53, 131, 156);
+    padding: 10px 60px 60px 60px;
+    background-color: white;
     height: auto;
     width: auto;
     max-width: 40%;
     max-height: 50%;
+    
   }
 
+
+  /* Button Modefier */
+  .Button_Modefier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    border: none;
+    margin-top: auto;
+    margin-top: 400px;
+  }
+  
+  /*change background image and possiton*/
+  body {
+  
+    background-image: url("backgruond.jpg");
+    
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /* Change Radio Button */
+  input[type="radio"] {
+    /* remove standard background appearance */
+    
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #c7c7c7;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+  }
+
+/* Change aswer Button 
+  input[type='button'] 
+  {
+    
+    
+  }
+  */
