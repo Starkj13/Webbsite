@@ -6,10 +6,6 @@
     width: auto; 
   }
 
-/* Radio button text changer */
-
- 
-
   /* Change quiz boxgruond design */
   div#test{
     border:none;
@@ -38,7 +34,7 @@
   /*change background image and possiton*/
   body {
   
-    background-image: url("backgruond.jpg");
+    background-image: url("");
     
   
     /* Full height */
@@ -51,27 +47,9 @@
     background-size: cover;
   }
 
+  .Text_Modifer{
 
-  /* Change Radio Button */
-  input[type="radio"] {
-    /* remove standard background appearance */
-    
-    /* create custom radiobutton appearance */
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    padding: 6px;
-    /* background-color only for content */
-    background-clip: content-box;
-    border: 2px solid #c7c7c7;
-    background-color: #e7e6e7;
-    border-radius: 50%;
-  }
+    margin-right: 100px;
 
-/* Change aswer Button 
-  input[type='button'] 
-  {
-    
-    
+
   }
-  */

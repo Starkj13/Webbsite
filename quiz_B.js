@@ -95,31 +95,41 @@ function get(x){
 function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
-    test.innerHTML = "<h2><span class ='nes-text is-primary'> Du fick "+correct+" av "+questions.length+" frågor rätt</span></h2>"
-    get("test_status").innerHTML = "<h2><span class ='nes-text is-primary'>Tipspromenad klar, Bra jobbat</span></h2>";
+    test.innerHTML = "<div class ='nes-container with-title is-centered' <p class='title'> Du fick "+correct+" av "+questions.length+"";
+    get("test_status").innerHTML = "<div class ='nes-container with-title is-centered' <p class='title'> Quiz klar, Bra jobbat";
     // resets the variable to allow users to restart the test
     pos = 0;
     correct = 0;
     // stops rest of renderQuestion function running when test is completed
     return false;
   }
-  get("test_status").innerHTML = "<h1><span class ='nes-text is-primary'> "+(pos+1)+" av "+questions.length;" </span></h1>";
+  get("test_status").innerHTML = "<div class ='nes-container with-title is-centered' <p class='title'> Frågor</p> <p> "+(pos+1)+" av "+questions.length;"</p></h1>";
   
   question = questions[pos].question;
   chA = questions[pos].a;
   chB = questions[pos].b;
   chC = questions[pos].c;
   // display the question
-  test.innerHTML = "<h3><span class ='nes-text is-primary'>"+question+"</span></h3>"
+  test.innerHTML = "<div>"+question+"";
   // display the answer options
   // the += appends to the data we started on the line above
  
-  test.innerHTML += "<label> <input type='radio' id=radio1 name='choices' value='A'> "+chA+"</label><br>";
-  test.innerHTML += "<label> <input type='radio' id=radio2 name='choices' value='B'> "+chB+"</label><br>";
-  test.innerHTML += "<label> <input type='radio' id=radio3 name='choices' value='C'> "+chC+"</label><br><br>";
-  test.innerHTML += "<input onclick='checkAnswer()' type = 'button' value = 'Svara'class='nes-btn'> </input>";
+  test.innerHTML += "<label> <input type='radio' id=radio1 name='choices' value='A' class='nes-radio' checked /><span>"+chA+"</span></label><br>"
+  test.innerHTML += "<label> <input type='radio' id=radio2 name='choices' value='B' class='nes-radio' checked /><span>"+chB+"</span></label><br>"
+  test.innerHTML += "<label> <input type='radio' id=radio3 name='choices' value='C' class='nes-radio' checked /><span>"+chC+"</span></label><br>"
+  test.innerHTML += "<input onclick='checkAnswer()' type = 'button' value='Svara' class='nes-btn'> </input>";
 
-  /*"<label> <input type='radio' id=radio2 name='choices' value='B'> "+chB+"</label><br>";*/
+
+  /* Grund Funktionen på radio knapparna
+"<label> <input type='radio' id=radio2 name='choices' value='B' class='nes-radio' checked /><span>"+chB+"</span></label><br>"
+*/
+
+/* Gammla radio knapp funktionen
+  "<label> <input type='radio' id=radio1 name='choices' value='A'> "+chA+"</label><br>";
+  "<label> <input type='radio' id=radio2 name='choices' value='B'> "+chB+"</label><br>";
+  "<label> <input type='radio' id=radio3 name='choices' value='C'> "+chC+"</label><br><br>";
+  "<input onclick='checkAnswer()' type = 'button' value = 'Svara'class='nes-btn'> </input>";
+  */
 }
 
 function checkAnswer(){
